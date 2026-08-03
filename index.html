@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人展示 · Alistair Li</title>
+
+    <!-- 升级版艺术字体：Abril Fatface + Cormorant Garamond + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">AL<span>.</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">关于</a>
+                <a href="#skills">能力</a>
+                <a href="#moments">生活</a>
+                <a href="#treehole">树洞</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shape"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">你好，我是</p>
+                <h1 class="hero-name">Alistair Li</h1>
+                <div class="hero-title-wrap">
+                    <span class="hero-title-prefix">我是一名</span>
+                    <span class="hero-title" id="typedTitle">深夜写作者</span>
+                    <span class="hero-cursor">|</span>
+                </div>
+                <p class="hero-desc">
+                    每个人都是无趣生活中的苦修士<br />
+                    祝你能够在平凡生活里找到不平凡的意义
+                </p>
+                <div class="hero-buttons">
+                    <a href="#moments" class="btn btn-primary">探索生活</a>
+                    <a href="#treehole" class="btn btn-outline">树洞倾诉</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <span class="avatar-inner">AL</span>
+                </div>
+                <div class="hero-ring"></div>
+                <div class="hero-dot dot-1"></div>
+                <div class="hero-dot dot-2"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>滚动探索</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-label">关于我的故事</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">这会是一段漫长的旅途</h2>
+                    <p class="about-desc">
+                        在目前的人生阶段中并没有找到存在的意义，故此今天在这里做出这个网站，
+                        记录我今后在生活中的点滴，为自己的生活提供一丝乐趣，当然，独乐乐不如众乐乐，
+                        也希望这个网站能够给各位提供部分参考或带来些许帮助
+                    </p>
+                    <!-- 标签在上，数值在下 -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">个人年龄</span>
+                            <span class="stat-number" id="ageDisplay">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">工龄</span>
+                            <span class="stat-number" id="workDisplay">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 能力图谱 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-label light">能力维度</div>
+            <h2 class="section-title light">我的能力图谱</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3 class="skill-name">技术</h3>
+                    <div class="skill-tag">笃行</div>
+                    <p class="skill-desc">尊重技术，追求卓越</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                    <h3 class="skill-name">知识</h3>
+                    <div class="skill-tag">博学</div>
+                    <p class="skill-desc">跨领域学习，持续迭代认知</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="skill-name">工作</h3>
+                    <div class="skill-tag">高效</div>
+                    <p class="skill-desc">敏捷协作，结果导向</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h3 class="skill-name">艺术</h3>
+                    <div class="skill-tag">敏锐</div>
+                    <p class="skill-desc">审美感知，创意无限</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生活 · 工作 · 学习 -->
+    <section class="moments" id="moments">
+        <div class="container">
+            <div class="section-label">生活片段</div>
+            <h2 class="section-title">工作 · 学习 · 日常</h2>
+            <div class="moments-grid">
+                <div class="moment-item">
+                    <div class="moment-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>工作</h3>
+                    <p>专注设计项目，与团队协作打造优质产品，每一份热爱都融入细节。</p>
+                </div>
+                <div class="moment-item">
+                    <div class="moment-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>学习</h3>
+                    <p>持续阅读、课程与实验，保持好奇心，让知识成为成长的燃料。</p>
+                </div>
+                <div class="moment-item">
+                    <div class="moment-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h3>生活</h3>
+                    <p>旅行、摄影、音乐，在平凡中捕捉灵感，用热爱滋养日常。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 树洞 · 倾听者 -->
+    <section class="treehole" id="treehole">
+        <div class="container">
+            <h2 class="section-title light"></h2>
+            <p class="treehole-intro">
+                不论是有趣还是无聊，以上页面都是我的生活。<br />
+                如果你在生活中遇到值得一提却又不知道向谁倾诉的事情，<br />
+                那么欢迎来到这里。<br />                
+            <span class="treehole-sub">所有信息仅用于回复，请放心。</span>
+            </p>
+            <div class="treehole-grid">
+                <div class="treehole-info">
+                    <div class="treehole-message">
+                        <i class="fas fa-gem" style="color: #f5efea; opacity: 0.6; font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <p>“倾听，是另一种陪伴。”</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.5rem;">—— 匿名好友</p>
+                    </div>
+                    <div class="treehole-social">
+                        <span style="font-size: 0.8rem; opacity: 0.5; display: block; margin-bottom: 0.8rem;">也可以在这里找到我</span>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="QQ"><i class="fab fa-qq"></i></a>
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="抖音"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <form class="treehole-form" id="treeholeForm">
+                    <textarea rows="1" placeholder="你的名字（选填）" id="nameInput" class="auto-expand"></textarea>
+                    <textarea rows="1" placeholder="邮箱地址（选填，若填写需为有效格式）" id="emailInput" class="auto-expand"></textarea>
+                    <textarea rows="3" placeholder="请放心倾诉，我会用心倾听……（必填）" required id="contentInput" class="auto-expand"></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">发送心声 🌱</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alistair Li · 希望你的每一天能如<span class="heart"><i class="fas fa-gem"></i></span> 般闪耀</p>
+            <div class="footer-links">
+                <a href="#hero">首页</a>
+                <a href="#about">关于</a>
+                <a href="#skills">能力</a>
+                <a href="#moments">生活</a>
+                <a href="#treehole">树洞</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
